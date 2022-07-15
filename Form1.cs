@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace labexec
 {
@@ -25,7 +26,7 @@ namespace labexec
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -44,7 +45,7 @@ namespace labexec
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
-     s   {
+        {
 
         }
 
@@ -52,6 +53,7 @@ namespace labexec
         {
 
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -63,11 +65,41 @@ namespace labexec
             i.item_name = ITEMNAME.Text;
             i.QUANTITY = Convert.ToInt32(QUANTITY.Text);
             i.price = Convert.ToDouble(PRICE.Text);
+            
+            ITEM.getallitems();
 
 
 
 
-            MessageBox.Show("record saved sussesfully");
+      
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = ITEM.getallitems();
+            bool valdiation = true;
+            if (NUMBER.Text.Length >4 )
+            {
+              errorProvider1.SetError(NUMBER, "invalid entry");
+                valdiation= false;
+                
+                
+                
+
+            }
+          if (valdiation)
+            {
+                i.save();
+            }
+            try
+            {
+                NUMBER.Text = null;
+                    
+            }
+            catch {
+                MessageBox.Show("errror");
+            }
+           
+                
+                 
 
         }
 
@@ -80,6 +112,11 @@ namespace labexec
             QUANTITY.Text = " ";
             PRICE.Text = null;
 
+            
+
+
+            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -87,6 +124,17 @@ namespace labexec
 
 
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            dateTimePicker1.Text = DATE.Text;
+           
         }
     }
 }
