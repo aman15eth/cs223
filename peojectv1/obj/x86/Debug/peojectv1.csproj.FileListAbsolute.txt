@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\peojectv1\bin\x86\Debug\peojectv1.exe.config
+C:\Users\user\source\repos\peojectv1\bin\x86\Debug\peojectv1.exe
+C:\Users\user\source\repos\peojectv1\bin\x86\Debug\peojectv1.pdb
+C:\Users\user\source\repos\peojectv1\obj\x86\Debug\peojectv1.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\peojectv1\obj\x86\Debug\peojectv1.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\source\repos\peojectv1\obj\x86\Debug\peojectv1.Form1.resources
+C:\Users\user\source\repos\peojectv1\obj\x86\Debug\peojectv1.Properties.Resources.resources
+C:\Users\user\source\repos\peojectv1\obj\x86\Debug\peojectv1.csproj.GenerateResource.cache
+C:\Users\user\source\repos\peojectv1\obj\x86\Debug\peojectv1.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\peojectv1\obj\x86\Debug\peojectv1.exe
+C:\Users\user\source\repos\peojectv1\obj\x86\Debug\peojectv1.pdb
